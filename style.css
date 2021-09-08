@@ -1,0 +1,66 @@
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+
+.header {
+    background-color: cornflowerblue;
+    grid-area: header;
+    padding: 15px;
+    display: grid;
+    grid-template: 1fr / 5fr 5fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+}
+
+.header__logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: azure;
+    grid-column: 2 / 3;
+}
+
+.header__dev {
+    grid-column: 4 / 5;
+}
+
+.header__fio {
+    grid-column: 4 / 5;
+}
+
+.main {
+    background-color: aquamarine;
+}
+
+.sidebar {
+    background-color: aqua;
+    grid-area: sidebar;
+}
+
+.avatar {
+    min-height: 20%;
+    max-width: 20%;
+}
+
+.content {
+    grid-area: content;
+}
+
+.contact {
+
+}
+
+.education {
+
+}
+
+.experience {
+
+}
+
+.footer {
+    background-color: cadetblue;
+    grid-area: footer;
+    min-height: 70px;
+}
