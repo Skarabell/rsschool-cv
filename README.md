@@ -1,1 +1,1 @@
-https://skarabell.github.io/rsschool-cv/cv
+https://skarabell.github.io/rsschool-cv/
