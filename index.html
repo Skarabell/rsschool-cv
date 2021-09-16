@@ -9,15 +9,15 @@
 <div class="wrapper">
     <header class="header">
         <div class="header__logo"></div>
-        <h2 class="header__dev">FRONTEND DEVELOPER</h2>
-        <h1 class="header__fio">KONSTANTIN SKOROHOD</h1>
+        <h2 class="h2">FRONTEND DEVELOPER</h2>
+        <h1 class="h1">KONSTANTIN SKOROHOD</h1>
     </header>
     <main class="main">
         <div class="sidebar">
             <div>
                 <img src="New_ava2.jpg" alt="avatar" class="avatar">
                 <hr>
-                <h3>
+                <h3 class="h3">
                     PERSONAL PROFILE
                 </h3>
                 <h4>
@@ -31,7 +31,7 @@
             </div>
             <div>
                 <hr>
-                <h3>
+                <h3 class="h3">
                     AREAS OF EXPERTISE
                 </h3>
                 <div>
@@ -53,7 +53,7 @@
             </div>
             <div>
                 <hr>
-                <h3>
+                <h3 class="h3">
                     OTHER SKILLS
                 </h3>
                 <div>
@@ -80,7 +80,9 @@
         </div>
         <div class="content">
             <div class="contact">
-                <h3>CONTACT</h3>
+                <h3 class="h3">
+                    CONTACT
+                </h3>
                 <p>
                     Mobile: +375-44-567-05-57
                 </p>
@@ -93,7 +95,7 @@
                 <hr>
             </div>
             <div class="experience">
-                <h3>
+                <h3 class="h3">
                     WORK EXPERIENCE
                 </h3>
                 <p>
@@ -112,7 +114,9 @@
                     AND REACT-ROUTER.
                 </p>
                 <p>
-                    ONLINE STORE
+                    <a href="https://github.com/Skarabell/online-store">
+                        ONLINE STORE
+                    </a>
                     BACKEND – NODEJS + SQL
                     FRONTEND – REACT + MOBX
                     ADDING NEW PRODUCTS TO THE DATABASE. RELATIONSHIP
@@ -121,7 +125,9 @@
                     ROUTE, REDIRECT, APPROUTER
                 </p>
                 <p>
-                    SOCIAL NETWORK
+                    <a href="https://github.com/Skarabell/skara-socialnet">
+                        SOCIAL NETWORK
+                    </a>
                     FRONTEND – REACT + REDUX. TYPESCRIPT.
                     AXIOS, REDUX-THUNK, REDUX-FORM/FORMIK, VALIDATION,
                     PAGINATION, RESELECT, JEST/UNIT TESTS.
@@ -129,7 +135,7 @@
                 <hr>
             </div>
             <div class="education">
-                <h3>
+                <h3 class="h3">
                     EDUCATION HISTORY
                 </h3>
                 <p>
@@ -145,10 +151,46 @@
                     ACCOUNTING, ANALYSIS AND AUDIT / MINSK
                 </p>
             </div>
+            <section class="cv-sec cv-code">
+                <h2 class="h2">
+                    Example of My Code
+                </h2>
+                <div class="text">
+                    <pre class="codeblock">
+            <code>
+                    onSort = sortField => {
+        const cloneData = this.state.data.concat();
+        const sort = this.state.sort === 'asc' ? 'desc' : 'asc';
+        const data = _.orderBy(cloneData, sortField, sort);
+        this.setState({data, sort, sortField})
+    }
+
+    onRowSelect = row => (
+        this.setState({row})
+    )
+
+    pageChangeHandler = ({selected}) => (
+        this.setState({currentPage: selected})
+    )
+            </code>
+            </pre>
+                </div>
+            </section>
+
         </div>
     </main>
     <footer class="footer">
-2021 RS School
+        <div class="footer-item">
+            <a href="https://github.com/SkaraBell">
+                <img class="footer-img" src="GitHub-Logo.svg" alt="github logo">
+            </a>
+        </div>
+        <div class="footer-item">2021</div>
+        <div class="footer-item">
+            <a href="https://rs.school/js/" title="rsschool site">
+                <img class="footer-img" src="rs_school_js.svg" alt="rsschol logo">
+            </a>
+        </div>
     </footer>
 </div>
 </body>
