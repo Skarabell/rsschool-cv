@@ -93,6 +93,11 @@ body.cv {
     color: #000000;
 }
 
+.project__img {
+max-width: 50%;
+    margin-left: 20%;
+}
+
 .codeblock {
     overflow: auto;
     margin: 10px;
