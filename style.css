@@ -3,7 +3,7 @@
 body.cv {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #3b3b3b;
+    color: grey;
 }
 
 .h1, .h2 {
@@ -37,17 +37,18 @@ body.cv {
     justify-content: end;
     align-items: end;
     min-height: 80px;
+    margin: 0 auto;
 }
 
 /* ----------------------------------------------------------- */
 /* .block-left */
-.photoname {
+.avatar {
     padding: 30px;
 }
 
 .h1 {
     margin: 10px 0;
-    font-size: 2em;
+    font-size: 3em;
     color: #010000;
 }
 
@@ -93,6 +94,11 @@ body.cv {
     color: #000000;
 }
 
+.project__img {
+    max-width: 60%;
+    margin-left: 20%;
+}
+
 .codeblock {
     overflow: auto;
     margin: 10px;
@@ -113,8 +119,10 @@ body.cv {
 }
 
 .footer-item {
+    margin: 0 auto;
     padding: 15px;
     text-align: center;
+    font-size: 24px;
 }
 
 .footer-img {
