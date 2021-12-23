@@ -3,7 +3,7 @@
 body.cv {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #3b3b3b;
+    color: grey;
 }
 
 .h1, .h2 {
@@ -37,6 +37,7 @@ body.cv {
     justify-content: end;
     align-items: end;
     min-height: 80px;
+    margin: 0 auto;
 }
 
 /* ----------------------------------------------------------- */
@@ -47,7 +48,7 @@ body.cv {
 
 .h1 {
     margin: 10px 0;
-    font-size: 2em;
+    font-size: 3em;
     color: #010000;
 }
 
@@ -94,7 +95,7 @@ body.cv {
 }
 
 .project__img {
-max-width: 50%;
+    max-width: 60%;
     margin-left: 20%;
 }
 
@@ -118,8 +119,10 @@ max-width: 50%;
 }
 
 .footer-item {
+    margin: 0 auto;
     padding: 15px;
     text-align: center;
+    font-size: 24px;
 }
 
 .footer-img {
